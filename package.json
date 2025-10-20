@@ -48,7 +48,6 @@
     "@primeng/themes": "^20.2.0",
     "@primeuix/themes": "^1.2.5",
     "@schematics/angular": "~20.3.0",
-    "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addon-styling-webpack": "^2.0.0",
     "@storybook/angular": "9.1.12",
