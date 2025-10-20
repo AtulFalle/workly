@@ -12,7 +12,6 @@
       "options": {
         "project": "libs/design-system/ng-package.json",
         "tsConfig": "libs/design-system/tsconfig.lib.json"
-        
       },
       "configurations": {
         "production": {
@@ -39,16 +38,7 @@
         "port": 4400,
         "configDir": "libs/design-system/.storybook",
         "browserTarget": "design-system:build-storybook",
-        "compodoc": false,
-        "styles": [
-          "libs/design-system/src/lib/assets/design-system.scss",
-          "libs/design-system/src/lib/assets/layout/layout.scss",
-          "libs/design-system/src/lib/assets/demo/demo.scss",
-          "libs/design-system/src/lib/assets/lib-tailwind.css"
-        ],
-        "stylePreprocessorOptions": {
-          "includePaths": ["libs/design-system/src/lib/assets", "node_modules"]
-        }
+        "compodoc": false
       },
       "configurations": {
         "ci": {
@@ -69,6 +59,12 @@
         "ci": {
           "quiet": true
         }
+      }
+    },
+    "test-storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "test-storybook -c libs/design-system/.storybook --url=http://localhost:4400"
       }
     },
     "static-storybook": {
